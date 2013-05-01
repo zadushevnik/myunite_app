@@ -5,6 +5,7 @@ Myunite::Application.routes.draw do
     root to: 'static_pages#home'
     
     match '/signup',  to: 'users#new'
+    match '/signout',  to: 'users#destroy'
 
     match '/help',    to: 'static_pages#help'
     match '/about',   to: 'static_pages#about'
